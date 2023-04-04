@@ -1,5 +1,5 @@
 .card{
-    border: 8px solid black;
+    border: 5px solid black;
 }
 
 .card-img-top{
@@ -9,3 +9,28 @@
     object-position:5% 5%;
     border: 2px solid black;
 }
+
+.card-title{
+ 
+    font-weight: bold;
+    margin-bottom:1rem;
+    font-size: 1.5rem;
+    
+}
+
+.card-text{
+    font-size: 1.1rem;
+    margin-bottom: 0rem;
+}
+
+body{
+    background-color:black;
+}
+
+.carousel-inner{
+    margin-left: 25%;
+}
+
+
+
+
