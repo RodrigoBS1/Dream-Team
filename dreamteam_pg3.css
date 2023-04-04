@@ -1,23 +1,72 @@
-body {
-    max-height: fit-content;
-    background-color: purple;
-    color: black;
-
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: red;
+        color: #fff;
+    }
 }
 
-.Container {
-    display: flex;
-    flex-direction: column;
-
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body {
+        width: 400px;
+        height: 400px;
+        background-color: orange;
+        color: black;
+    }
 }
 
-.column {
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    body {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        color: #ff0000;
+    }
+}
 
-    padding: 10px;
-    border: 1px solid #77aaff;
-    box-shadow: -1px 1px #77aaff,
-        -2px 2px #77aaff,
-        -3px 3px #77aaff,
-        -4px 4px #77aaff,
-        -5px 5px #77aaff;
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+
+    body {
+        width: 400px;
+        height: 200px;
+        background-color: purple;
+        color: black;
+    }
+
+    .wholepage {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .column {
+
+        padding: 10px;
+        border: 1px solid #77aaff;
+        box-shadow: -1px 1px #77aaff,
+            -2px 2px #77aaff,
+            -3px 3px #77aaff,
+            -4px 4px #77aaff,
+            -5px 5px #77aaff;
+    }
+
+    .container-fluid {
+        display: flex;
+        flex-direction: row;
+        padding: 1px;
+        border: 1px solid #77aaff;
+        box-shadow: -1px 1px #77aaff,
+            -2px 2px #77aaff,
+            -3px 3px #77aaff,
+            -4px 4px #77aaff,
+            -5px 5px #77aaff;
+    }
+
+    h2 {
+        margin-top: 0%;
+    }
 }
