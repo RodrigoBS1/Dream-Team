@@ -1,85 +1,58 @@
 let player1 = {
 
     name : "Kobe Bryant",
-    position : 16,
-    height : "6'2",
-    stats :
-    rings:
+    position : SG,SF,
+    height : "6'6",
+    stats :25.0,
+    rings :5,
+    Allstar: 18,
 
-    eat : function (){
-        console.log("Stone is eating nachos")
-    },
-    drink : function (){
-        console.log("Stone is drinking gatorade")
-    },
-    play : function(){
-        console.log("Stone is playing basketball");
-    }
 };
 
 let player2 = {
 
     name : "Michael Jordan",
-    position : 16,
-    height : "6'2",
-    stats :
-    rings:
+    position : SG,SF,
+    height : "6'6",
+    stats : 30.0,
+    rings : 6,
+    Allstar : 14,
 
-    eat : function (){
-        console.log("Stone is eating nachos")
-    },
-    drink : function (){
-        console.log("Stone is drinking gatorade")
-    },
-    play : function(){
-        console.log("Stone is playing basketball");
-    }
+   
 };
-let human1 = {
+let player3 = {
 
-    name : "Stone",
-    age : 16,
-    height : "6'2",
+    name : "Magic Johnson",
+    position : PG, SG,
+    height : "6'9",
+    stats : 19.5,
+    rings : 5,
+    Allstar : 11,
 
-    eat : function (){
-        console.log("Stone is eating nachos")
-    },
-    drink : function (){
-        console.log("Stone is drinking gatorade")
-    },
-    play : function(){
-        console.log("Stone is playing basketball");
-    }
+    
 };
-let human1 = {
+let player4 = {
 
-    name : "Stone",
-    age : 16,
-    height : "6'2",
+    name : "Shaquille O'Neal",
+    position : Center,
+    height : "7'1",
+    stats :23.7,
+    rings : 4,
+    Allstar : 15,
 
-    eat : function (){
-        console.log("Stone is eating nachos")
-    },
-    drink : function (){
-        console.log("Stone is drinking gatorade")
-    },
-    play : function(){
-        console.log("Stone is playing basketball");
-    }
+    
 };
-let human1 = {
+let player5 = {
 
-    name : "Stone",
-    age : 16,
-    height : "6'2",
+    name : "Tim Duncan",
+    position : PF,
+    height : "6'11",
+    stats :19.0,
+    rings : 5,
+    Allstar : 15,
 
-    eat : function (){
-        console.log("Stone is eating nachos")
-    },
-    drink : function (){
-        console.log("Stone is drinking gatorade")
-    },
-    play : function(){
-        console.log("Stone is playing basketball");
-    }
 };
+
+console.log(player1.name);
+console.log(player2.age);
+console.log(player3.height);
