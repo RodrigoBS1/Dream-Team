@@ -7,10 +7,25 @@ h1 {
     color: white;
     justify-content: center;
     margin: 20px;
+    text-shadow: 3px 3px black;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 400px 250px;
+
+}
+
+.player-list {
+    display: flexbox;    
+    justify-content: center;
+    color:black;
+    background-color: white;
 }
 
 .card {
     display: flex;
+    justify-content: center;
     margin: 20px;
     background-color: #A19060;
 }
