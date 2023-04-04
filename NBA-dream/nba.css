@@ -24,7 +24,7 @@
     font-size: 30px;
     z-index: 997;
     font-weight: bold;
-    color: rgb(17, 17, 131);
+    color: rgb(255, 255, 255);
 }
 
 #navbar
@@ -34,7 +34,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgb(251, 232, 232);
+    background: rgb(0, 13, 108);
     display:grid;
     place-items: center;
 }
@@ -55,25 +55,25 @@
 #navbar ul li a
 {
     text-decoration: none;
-    color: blueviolet;
+    color: rgb(247, 246, 248);
 }
 
 #navbar ul li a:hover
 {
-    color: yellow;
+    color: rgb(255, 0, 47);
 }
 
 #image
 {
-    position: absolute;
     top: calc(50% - 300px);
-    right: 5%;
+    right: -32%;
     z-index: 999;
+    position: relative;
 }
 
 #image img
 {
-    height: 1100px;
+    height: 800px;
     filter: drop-shadow(-140px -140px 5px black);
     transition: 0.5s;
 }
@@ -111,6 +111,56 @@
 
 #content:hover h4
 {
-    color: rgb(2, 140, 150);
+    color: rgb(150, 2, 2);
     transition: 0.5s;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card{
+    border: 8px solid rgb(16, 0, 122);
+}
+
+.card-img-top{
+    width: 200px;
+    height:200px;
+    object-fit: cover;
+    object-position:5% 5%;
+    border: 2px solid rgb(13, 0, 84);
 }
