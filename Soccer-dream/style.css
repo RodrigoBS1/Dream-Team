@@ -1,5 +1,5 @@
 body {
-    background-color: #80000A;
+    background: linear-gradient(135deg, orange 60%, cyan)
 }
 
 h1 {
@@ -10,7 +10,7 @@ h1 {
     text-shadow: 3px 3px black;
 }
 
-.card-container {
+.playerlist-container {
     display: grid;
     grid-template-columns: 400px 250px;
 
