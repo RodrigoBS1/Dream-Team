@@ -1,0 +1,11 @@
+.card{
+    border: 8px solid black;
+}
+
+.card-img-top{
+    width: 200px;
+    height:200px;
+    object-fit: cover;
+    object-position:5% 5%;
+    border: 2px solid black;
+}
