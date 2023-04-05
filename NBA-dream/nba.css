@@ -114,3 +114,29 @@
     transition: 0.5s;
 }
 
+
+/* ul{
+    border: 2px rgb(8, 60, 218);
+}
+
+ul > li {
+    background: red;
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+    height: 20px;
+}
+ */
+
+
+ .card{
+    border: 8px solid black;
+}
+
+.card-img-top{
+    width: 200px;
+    height:200px;
+    object-fit: cover;
+    object-position:5% 5%;
+    border: 2px solid black;
+}
