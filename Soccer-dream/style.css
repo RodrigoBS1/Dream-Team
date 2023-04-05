@@ -1,0 +1,16 @@
+body {
+    background-color: #80000A;
+}
+
+h1 {
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin: 20px;
+}
+
+.card {
+    display: flex;
+    margin: 20px;
+    background-color: #A19060;
+}

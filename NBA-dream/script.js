@@ -1,85 +1,24 @@
-let player1 = {
+import API_TOKEN from "./config.js"
 
-    name : "Kobe Bryant",
-    position : 16,
-    height : "6'2",
-    stats :
-    rings:
+let playerName = document.getElementById('city-name')
 
-    eat : function (){
-        console.log("Stone is eating nachos")
-    },
-    drink : function (){
-        console.log("Stone is drinking gatorade")
-    },
-    play : function(){
-        console.log("Stone is playing basketball");
-    }
-};
+let playerToSearch = document.getElementById('input-city')
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-let player2 = {
+    let inputCity = playerToSearch.value
+    console.log(playerToSearch.value)
+    fetch(`http://api.weatherapi.com/v1/current.json?key=${API_TOKEN}&q=${inputCity}&aqi=no`)
+    .then(response => {
+        console.log(response.status)
+        return response.json()
+    })
+    .then(data => {
+        console.log(data)
+        playerName.innerText = data.location.name
+        fahrenheitTemp.innerText = Math.round(data.current.temp_f)
+        celsiusTemp.innerText = Math.round(data.current.temp_c)
+    })
 
-    name : "Michael Jordan",
-    position : 16,
-    height : "6'2",
-    stats :
-    rings:
-
-    eat : function (){
-        console.log("Stone is eating nachos")
-    },
-    drink : function (){
-        console.log("Stone is drinking gatorade")
-    },
-    play : function(){
-        console.log("Stone is playing basketball");
-    }
-};
-let human1 = {
-
-    name : "Stone",
-    age : 16,
-    height : "6'2",
-
-    eat : function (){
-        console.log("Stone is eating nachos")
-    },
-    drink : function (){
-        console.log("Stone is drinking gatorade")
-    },
-    play : function(){
-        console.log("Stone is playing basketball");
-    }
-};
-let human1 = {
-
-    name : "Stone",
-    age : 16,
-    height : "6'2",
-
-    eat : function (){
-        console.log("Stone is eating nachos")
-    },
-    drink : function (){
-        console.log("Stone is drinking gatorade")
-    },
-    play : function(){
-        console.log("Stone is playing basketball");
-    }
-};
-let human1 = {
-
-    name : "Stone",
-    age : 16,
-    height : "6'2",
-
-    eat : function (){
-        console.log("Stone is eating nachos")
-    },
-    drink : function (){
-        console.log("Stone is drinking gatorade")
-    },
-    play : function(){
-        console.log("Stone is playing basketball");
-    }
-};
+    fetch(`http://api.weatherapi.com/v1/astronomy.json?key=${API_TOKEN}&q=${inputCity}&dt=2023-03-30
+    `).then(response => response.json()).then(data => sunriseElement.innerText =data.astronomy.astro.sunrise)
