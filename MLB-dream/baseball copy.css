@@ -1,19 +1,25 @@
 .card{
     border: 5px solid black;
+
     background-image: linear-gradient(blue,green);
     padding-top: 10px;
+
 }
+
+    border: 2px solid white;
+}
+
+.ha{
+    object-position:40% 10%;
+
 
 .card-img-top{
     width: 200px;
     height:200px;
     object-fit: cover;
     object-position:5% 5%;
-    border: 2px solid white;
-}
+    border: 2px solid black;
 
-.ha{
-    object-position:40% 10%;
 }
 
 .card-title{
@@ -21,13 +27,17 @@
     font-weight: bold;
     margin-bottom:1rem;
     font-size: 1.5rem;
+
     color:white;
+
+
     
 }
 
 .card-text{
     font-size: 1.1rem;
     margin-bottom: 0rem;
+
     color:white;
 }
 
@@ -45,6 +55,16 @@ body{
 .carousel-inner{
     width:auto;
     margin-top:5%;
+
+}
+
+body{
+    background-color:black;
+}
+
+.carousel-inner{
+    margin-left: 25%;
+
 }
 
 
