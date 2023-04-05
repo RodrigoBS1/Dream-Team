@@ -1,3 +1,27 @@
+body {
+    background: linear-gradient(135deg, orange 60%, cyan)
+}
+
+h1 {
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin: 20px;
+    text-shadow: 3px 3px black;
+}
+
+.playerlist-container {
+    display: grid;
+    grid-template-columns: 400px 250px;
+
+}
+
+.player-list {
+    display: flexbox;    
+    justify-content: center;
+    color:black;
+    background-color: white;
+
 .card{
     border: 8px solid black;
 }
@@ -49,12 +73,19 @@
     background: rgb(11, 0, 110);
     display: grid;
     place-items: center;
+
 }
 
 #navbar ul
 {
     list-style: none;
     display: flex;
+
+    justify-content: center;
+    margin: 20px;
+    background-color: #A19060;
+}
+
     flex-direction: row;
 }
 
