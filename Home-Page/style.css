@@ -11,7 +11,7 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(45deg, blue, red);
+    background: linear-gradient(45deg, rgb(0, 0, 115), rgb(1, 142, 160));
 }
 
 .menu
@@ -68,4 +68,68 @@ body
 
 .menu.active .toggle{
     transform: rotate(315deg)
+}
+
+
+/* Adding pictures to body */
+
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: left;
+    overflow: auto;
+}
+
+.main{
+    display: grid;
+    grid-column-gap: 2.3vw;
+    grid-row-gap: 7vw;
+    grid-template-columns: repeat(5,7vw);
+    grid-auto-rows: 7vw;
+    grid-template-areas: "g1 . g2 . g3 " "g4 . g5 . g6";
+    justify-content: space-evenly;
+}
+
+.clip{
+    position: relative;
+    background-color: brown;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transform: scale(2.5);
+    transition: 0.3s;
+}
+
+.hex1{
+    grid-area: g1;
+}
+
+.hex2{
+    grid-area: g2;
+}
+
+.hex3{
+    grid-area: g3;
+}
+
+.hex4{
+    grid-area: g4;
+}
+
+.hex5{
+    grid-area: g5;
+}
+
+.hex6{
+    grid-area: g6;
+}
+
+.clip:hover
+{
+    z-index: 1;
+    transform: scale(3.0);
+    box-shadow: 500px 500px 500px 500px black;
 }

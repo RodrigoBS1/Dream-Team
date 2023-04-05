@@ -1,58 +1,24 @@
-let player1 = {
+import API_TOKEN from "./config.js"
 
-    name : "Kobe Bryant",
-    position : SG,SF,
-    height : "6'6",
-    stats :25.0,
-    rings :5,
-    Allstar: 18,
+let playerName = document.getElementById('city-name')
 
-};
+let playerToSearch = document.getElementById('input-city')
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-let player2 = {
+    let inputCity = playerToSearch.value
+    console.log(playerToSearch.value)
+    fetch(`http://api.weatherapi.com/v1/current.json?key=${API_TOKEN}&q=${inputCity}&aqi=no`)
+    .then(response => {
+        console.log(response.status)
+        return response.json()
+    })
+    .then(data => {
+        console.log(data)
+        playerName.innerText = data.location.name
+        fahrenheitTemp.innerText = Math.round(data.current.temp_f)
+        celsiusTemp.innerText = Math.round(data.current.temp_c)
+    })
 
-    name : "Michael Jordan",
-    position : SG,SF,
-    height : "6'6",
-    stats : 30.0,
-    rings : 6,
-    Allstar : 14,
-
-   
-};
-let player3 = {
-
-    name : "Magic Johnson",
-    position : PG, SG,
-    height : "6'9",
-    stats : 19.5,
-    rings : 5,
-    Allstar : 11,
-
-    
-};
-let player4 = {
-
-    name : "Shaquille O'Neal",
-    position : Center,
-    height : "7'1",
-    stats :23.7,
-    rings : 4,
-    Allstar : 15,
-
-    
-};
-let player5 = {
-
-    name : "Tim Duncan",
-    position : PF,
-    height : "6'11",
-    stats :19.0,
-    rings : 5,
-    Allstar : 15,
-
-};
-
-console.log(player1.name);
-console.log(player2.age);
-console.log(player3.height);
+    fetch(`http://api.weatherapi.com/v1/astronomy.json?key=${API_TOKEN}&q=${inputCity}&dt=2023-03-30
+    `).then(response => response.json()).then(data => sunriseElement.innerText =data.astronomy.astro.sunrise)
