@@ -1,6 +1,7 @@
 body {
-    background: linear-gradient(135deg, orange 60%, cyan)
+    background: linear-gradient(135deg, rgb(0, 76, 255) 60%, cyan)
 }
+
 
 h1 {
     display: flex;
@@ -111,14 +112,14 @@ h1 {
     position: absolute;
     top: calc(50% - 300px);
     right: 5%;
-    z-index: 999;
+    z-index: 0;
 }
 
 #image img
 {
     height: 600px;
     filter: drop-shadow(-140px -140px 5px black);
-    transition: 0.5s;
+    transition: 2s;
 }
 
 #image img:hover
