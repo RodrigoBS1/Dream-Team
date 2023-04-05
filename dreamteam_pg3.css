@@ -37,6 +37,7 @@
 
     h2 {
         margin-top: 0%;
+
         font-size: small;
 
     }
@@ -44,6 +45,9 @@
     .wholepage {
         display: flex;
         justify-content: space-around;
+
+        flex: auto;
+
     }
 
     .d-block_w-100 {
