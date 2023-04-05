@@ -1,3 +1,15 @@
+.card{
+    border: 8px solid black;
+}
+
+.card-img-top{
+    width: 200px;
+    height:200px;
+    object-fit: cover;
+    object-position:5% 5%;
+    border: 2px solid black;
+}
+
 *
 {
     padding: 0;
@@ -73,7 +85,7 @@
 
 #image img
 {
-    height: 990px;
+    height: 600px;
     filter: drop-shadow(-140px -140px 5px black);
     transition: 0.5s;
 }
